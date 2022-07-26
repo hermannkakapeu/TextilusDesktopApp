@@ -1,0 +1,85 @@
+
+#python3 -m pip install kivy_garden.graph --extra-index-url http://kivy-garden.github.io/simple/
+#Commande pour installer kivy_garden dans le terminale
+
+
+AnchorLayout:
+                anchor_x: "right"
+                anchor_y: "bottom"
+                BoxLayout:
+                    orientation: 'horizontal'
+                    size_hint: .3, .3
+                    Button:
+                        text: "Button Top"
+                        background_color :0, 0, 1, 1
+                    Button:
+                        text: "Button Top"
+                        background_color :0, 0, 1, 1
+
+
+
+BoxLayout:
+            #spacing : 10
+            size_hint: 1, 0.20
+            pos_hint : {"top":1}
+            FloatLayout:
+                cols: 3
+                rows: 2
+                StackLayout:
+
+                    size_hint: .24, .1
+                    pos_hint: {"x": 0, "top":1}
+                    #size: 300, 60
+                    Image:
+                        source: "images/esith.png"
+
+                    Label:
+                        text: "Textilus"
+                        color :root.blackColor
+
+
+
+
+
+
+
+
+
+"""
+n: n
+    email: email
+    created:created
+
+    FloatLayout:
+        Label:
+            id: n
+            pos_hint:{"x": 0.1, "top":0.9}
+            size_hint:0.8, 0.2
+            text: "Account Name: "
+
+        Label:
+            id: email
+            pos_hint:{"x": 0.1, "top":0.7}
+            size_hint:0.8, 0.2
+            text: "Email: "
+
+        Label:
+            id: created
+            pos_hint:{"x": 0.1, "top":0.5}
+            size_hint:0.8, 0.2
+            text: "Created: "
+
+        Button:
+            pos_hint:{"x":0.2, "y": 0.1}
+            size_hint:0.6,0.2
+            text: "Log Out"
+            on_release:
+                app.root.current = "login"
+                root.manager.transition.direction = "down"
+
+
+
+
+https://www.youtube.com/watch?v=HMnAg_izNcY&list=PLhTjy8cBISEoQQLZ9IBlVlr4WjVoStmy-&index=10
+link for datatables
+"""
